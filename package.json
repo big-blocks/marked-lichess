@@ -1,0 +1,65 @@
+{
+  "name": "marked-lichess",
+  "version": "0.0.0",
+  "description": "marked extension template",
+  "main": "./lib/index.cjs",
+  "module": "./src/index.js",
+  "browser": "./lib/index.umd.js",
+  "type": "module",
+  "keywords": [
+    "marked",
+    "extension"
+  ],
+  "files": [
+    "lib/",
+    "src/"
+  ],
+  "exports": {
+    ".": {
+      "import": "./src/index.js",
+      "require": "./lib/index.cjs"
+    }
+  },
+  "scripts": {
+    "test": "jest --verbose",
+    "test:cover": "jest --coverage",
+    "lint": "eslint .",
+    "build": "rollup -c rollup.config.js",
+    "format": "prettier --check ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/big-blocks/marked-penrose.git"
+  },
+  "author": "Edwin Kofler <edwin@kofler.dev> (https://edwinkofler.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/big-blocks/marked-penrose/issues"
+  },
+  "homepage": "https://github.com/markedjs/marked-extension-template#readme",
+  "devDependencies": {
+    "@babel/core": "^7.23.0",
+    "@babel/preset-env": "^7.22.20",
+    "@hyperupcall/prettier-config": "^0.7.0",
+    "babel-jest": "^29.7.0",
+    "eslint": "^8.56.0",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-n": "^16.5.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "jest-cli": "^29.7.0",
+    "prettier": "^3.1.1",
+    "prettier-plugin-pkg": "^0.18.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-markdown": "^3.0.1",
+    "eslint-plugin-unicorn": "^50.0.1",
+    "eslint-plugin-security": "^2.1.0",
+    "@eslint-community/eslint-plugin-eslint-comments": "^4.1.0",
+    "@hyperupcall/eslint-config": "^0.10.0",
+    "markdownlint": "^0.32.1",
+    "@hyperupcall/markdownlint-config": "^0.3.2"
+  },
+  "dependencies": {
+    "synckit": "^0.8.6"
+  }
+}
