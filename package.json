@@ -55,7 +55,7 @@
     "eslint-plugin-unicorn": "^50.0.1",
     "eslint-plugin-security": "^2.1.0",
     "@eslint-community/eslint-plugin-eslint-comments": "^4.1.0",
-    "@hyperupcall/eslint-config": "^0.10.0",
+    "@hyperupcall/eslint-config": "^0.11.0",
     "markdownlint": "^0.32.1",
     "@hyperupcall/markdownlint-config": "^0.3.2"
   },
