@@ -60,6 +60,6 @@
     "@hyperupcall/markdownlint-config": "^0.3.2"
   },
   "dependencies": {
-    "synckit": "^0.8.6"
+    "synckit": "^0.9.0"
   }
 }
